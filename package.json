@@ -1,0 +1,31 @@
+{
+  "name": "turf-random",
+  "version": "1.0.0",
+  "description": "generate random features",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Turfjs/turf-random.git"
+  },
+  "keywords": [
+    "turf",
+    "gis"
+  ],
+  "author": "Tom MacWright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Turfjs/turf-random/issues"
+  },
+  "homepage": "https://github.com/Turfjs/turf-random",
+  "devDependencies": {
+    "benchmark": "^1.0.0",
+    "glob": "~4.3.1",
+    "tape": "~3.0.3"
+  },
+  "dependencies": {
+    "geojson-random": "^0.2.1"
+  }
+}
