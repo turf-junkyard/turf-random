@@ -12,15 +12,21 @@ var random = require('geojson-random');
  * @param {Array<number>} options.bbox a bounding box inside of which geometries
  * are placed. In the case of points, they are guaranteed to be within this bounds,
  * while polygons have their centroid within it.
- * @param {Number} [options.num_ertices=10] the number of vertices added
+ * @param {Number} [options.num_vertices=10] the number of vertices added
  * to polygon features.
  * @param {Number} [options.max_radial_length=10] the total number of decimal
  * degrees longitude or latitude that a polygon can extent outwards to
  * from its center.
  * @return {FeatureCollection} generated random features
  * @example
- * var points = turf.random('points', 10);
+ * var points = turf.random('points', 100, {
+ *   bbox: [-70, 40, -60, 60]
+ * });
  * //=points
+ * var polygons = turf.random('polygons', 4, {
+ *   bbox: [-70, 40, -60, 60]
+ * });
+ * //=polygons
  */
 module.exports = function(type, count, options) {
     options = options || {};
