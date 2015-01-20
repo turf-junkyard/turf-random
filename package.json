@@ -4,7 +4,8 @@
   "description": "generate random features",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js"
+    "test": "tape test.js",
+    "doc": "dox < index.js | doxme"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
   "homepage": "https://github.com/Turfjs/turf-random",
   "devDependencies": {
     "benchmark": "^1.0.0",
+    "dox": "^0.6.1",
+    "doxme": "^1.2.1",
     "glob": "~4.3.1",
     "tape": "~3.0.3"
   },
