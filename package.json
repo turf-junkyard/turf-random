@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "tape test.js",
-    "doc": "dox < index.js | doxme"
+    "doc": "dox -r < index.js | doxme --readme > README.md"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
   "devDependencies": {
     "benchmark": "^1.0.0",
     "dox": "^0.6.1",
-    "doxme": "^1.2.1",
+    "doxme": "^1.4.2",
     "glob": "~4.3.1",
     "tape": "~3.0.3"
   },
