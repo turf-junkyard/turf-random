@@ -1,18 +1,17 @@
 var random = require('geojson-random');
 
 /**
- * Generates random GeoJSON data, including Points and Polygons, for testing
+ * Generates random {@link GeoJSON} data, including {@link Point|Points} and {@link Polygon|Polygons}, for testing
  * and experimentation.
  *
  * @module turf/random
- * @param {String} [type='point'] type of features desired. Valid values
- * are 'points' or 'polygons'
+ * @param {String} [type='point'] type of features desired: 'points' or 'polygons'
  * @param {Number} [count=1] how many geometries should be generated.
- * @param {Object} options relevant to the feature desired. Can include:
+ * @param {Object} options options relevant to the feature desired. Can include:
  * @param {Array<number>} options.bbox a bounding box inside of which geometries
- * are placed. In the case of points, they are guaranteed to be within this bounds,
- * while polygons have their centroid within it.
- * @param {Number} [options.num_vertices=10] the number of vertices added
+ * are placed. In the case of {@link Point} features, they are guaranteed to be within this bounds,
+ * while {@link Polygon} features have their centroid within the bounds.
+ * @param {Number} [options.num_vertices=10] options.vertices the number of vertices added
  * to polygon features.
  * @param {Number} [options.max_radial_length=10] the total number of decimal
  * degrees longitude or latitude that a polygon can extent outwards to
@@ -22,10 +21,13 @@ var random = require('geojson-random');
  * var points = turf.random('points', 100, {
  *   bbox: [-70, 40, -60, 60]
  * });
+ *
  * //=points
+ *
  * var polygons = turf.random('polygons', 4, {
  *   bbox: [-70, 40, -60, 60]
  * });
+ *
  * //=polygons
  */
 module.exports = function(type, count, options) {
