@@ -5,6 +5,7 @@ var random = require('geojson-random');
  * and experimentation.
  *
  * @module turf/random
+ * @category data
  * @param {String} [type='point'] type of features desired: 'points' or 'polygons'
  * @param {Number} [count=1] how many geometries should be generated.
  * @param {Object} options options relevant to the feature desired. Can include:
