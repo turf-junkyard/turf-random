@@ -29,6 +29,6 @@
     "tape": "~3.0.3"
   },
   "dependencies": {
-    "geojson-random": "^0.2.1"
+    "geojson-random": "^0.2.2"
   }
 }
