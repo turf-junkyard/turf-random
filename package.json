@@ -1,6 +1,6 @@
 {
   "name": "turf-random",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "generate random features",
   "main": "index.js",
   "scripts": {
@@ -24,9 +24,9 @@
   "devDependencies": {
     "benchmark": "^1.0.0",
     "dox": "^0.6.1",
-    "doxme": "^1.4.2",
-    "glob": "~4.3.1",
-    "tape": "~3.0.3"
+    "doxme": "^1.4.3",
+    "glob": "~4.3.5",
+    "tape": "~3.5.0"
   },
   "dependencies": {
     "geojson-random": "^0.2.2"
