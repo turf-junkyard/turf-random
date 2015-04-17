@@ -18,8 +18,7 @@ and experimentation.
 | `[type='point']`                 | String            | _optional:_ type of features desired: 'points' or 'polygons'                                                                                                                                     |
 | `[count=1]`                      | Number            | _optional:_ how many geometries should be generated.                                                                                                                                             |
 | `options`                        | Object            | options relevant to the feature desired. Can include:                                                                                                                                            |
-| `options.bbox`                   | Array\.\<number\> | a bounding box inside of which geometries are placed. In the case of Point features, they are guaranteed to be within this bounds,
-while Polygon features have their centroid within the bounds. |
+| `options.bbox`                   | Array\.\<number\> | a bounding box inside of which geometries are placed. In the case of Point features, they are guaranteed to be within this bounds, while Polygon features have their centroid within the bounds. |
 | `[options.num_vertices=10]`      | Number            | _optional:_ options.vertices the number of vertices added to polygon features.                                                                                                                   |
 | `[options.max_radial_length=10]` | Number            | _optional:_ the total number of decimal degrees longitude or latitude that a polygon can extent outwards to
 from its center.                                                                     |
